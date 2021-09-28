@@ -39,7 +39,7 @@
     <section class="jumbotron text-center">
       <img src="img/portfolio.jpg" alt="Ahmad Maulid Ridwan" width="200px" class="rounded-circle mt-4 img-thumbnail" />
       <h1 class="display-4">Ahmad Maulid Ridwan</h1>
-      <p class="lead">Freelance | Database Managemen</p>
+      <p class="lead"></p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#ffffff"
@@ -92,9 +92,12 @@
         <div class="row justify-content-center">
           <div class="col-md-4 mb-3">
             <div class="card" data-aos="flip-left" data-aos-duration="1000">
-              <img src="img/1.jpg" class="card-img-top shadow-sm" alt="Project 1" height="200px" />
+              <img src="img/project/e-arsip.png" class="card-img-top shadow-sm" alt="Project 1" height="200px" />
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">
+                  E-Arsip kependudukan <br />Username : admin <br />Password : 123456 <br />
+                  <a href="https://e-arsip.ahmadmaulid.com/" class="btn btn-primary btn-sm">Demo App</a>
+                </p>
               </div>
             </div>
           </div>
@@ -275,6 +278,21 @@
       AOS.init({
         once: true,
       });
+    </script>
+
+    <!-- GSAP SCRIPT -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+
+    <!-- Text Plugin GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/TextPlugin.min.js"></script>
+
+    <script>
+      // Register plugin Text
+      gsap.registerPlugin(TextPlugin);
+      gsap.to('.lead', { duration: 2, delay: 1.5, text: 'Freelance | Database Managemen' });
+      gsap.from('.jumbotron img', { duration: 1, rotateY: 360, opacity: 0 });
+      gsap.from('.navbar', { duration: 1.5, y: '-100%', opacity: 0, ease: 'bounce' });
+      gsap.from('.display-4', { duration: 1, x: -50, opacity: 0, delay: 0.5, ease: 'back' });
     </script>
     <script>
       const scriptURL = 'https://script.google.com/macros/s/AKfycbwYAUKvCe-SpCl-Y79McLutHH0665ysyZb9M-rEsMyVVzJIt3KyEGiMnIcD2FR9JJIsJw/exec';
