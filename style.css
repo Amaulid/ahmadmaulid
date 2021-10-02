@@ -2,13 +2,26 @@ body {
   background-color: #213e3b;
 }
 .jumbotron {
+  height: 450px;
   padding-top: 6rem;
-  background-color: #a6f6f1;
+  background-image: url('img/bg.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  overflow: hidden;
+}
+.jumbotron img {
+  box-shadow: 2px 2px 10px rgba(125, 255, 3, 0.719);
+}
+
+.jumbotron h1,
+.jumbotron p {
+  text-shadow: 2px 2px 10px rgba(125, 255, 3, 0.719);
 }
 
 #projects {
   background-color: #1c3626;
 }
+
 #gallery {
   background-color: #28df99;
 }
