@@ -1,25 +1,25 @@
 body {
-  background-color: #213e3b;
+  background-color: #0d7377;
 }
 .jumbotron {
   height: 450px;
   padding-top: 6rem;
-  background-image: url('img/bg.jpg');
+  background-image: url('img/3.jpg');
   background-attachment: fixed;
   background-size: cover;
   overflow: hidden;
 }
 .jumbotron img {
-  box-shadow: 2px 2px 10px rgba(125, 255, 3, 0.719);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.719);
 }
 
 .jumbotron h1,
 .jumbotron p {
-  text-shadow: 2px 2px 10px rgba(125, 255, 3, 0.719);
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.719);
 }
 
 #projects {
-  background-color: #1c3626;
+  background-color: #32e0c4;
 }
 
 #gallery {
